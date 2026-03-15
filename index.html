@@ -28,8 +28,6 @@
       color: var(--text);
       line-height: 1.75;
     }
-
-    /* HEADER */
     header {
       padding: 5rem 2rem 4rem;
       max-width: 760px;
@@ -66,8 +64,6 @@
       text-transform: uppercase;
       margin-bottom: 1.4rem;
     }
-
-    /* CONTACT LINKS */
     .contact-links {
       display: flex;
       gap: 1.4rem;
@@ -83,23 +79,20 @@
       transition: color 0.2s;
     }
     .contact-links a:hover { color: var(--text); }
-
-    /* BIO SECTION */
     .bio {
       max-width: 760px;
       margin: 0 auto;
-      padding: 3.5rem 2rem 0;
+      padding: 3.5rem 2rem;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 3.5rem;
     }
-    .bio .section-label {
+    .section-label {
       font-size: 0.72rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--text-faint);
       margin-bottom: 1.6rem;
     }
-    .bio-accent {
+    .accent-bar {
       width: 28px;
       height: 1.5px;
       background: var(--sand);
@@ -113,28 +106,11 @@
       margin-bottom: 1rem;
     }
     .bio p:last-child { margin-bottom: 0; }
-
-    /* MAIN */
     main {
       max-width: 760px;
       margin: 0 auto;
       padding: 3.5rem 2rem 6rem;
     }
-    .section-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-faint);
-      margin-bottom: 2rem;
-    }
-    .accent-bar {
-      width: 28px;
-      height: 1.5px;
-      background: var(--sand);
-      margin-bottom: 2.2rem;
-    }
-
-    /* PROJECT CARDS */
     .project {
       display: block;
       background: var(--bg-card);
@@ -230,8 +206,6 @@
       margin-top: 1rem;
       letter-spacing: 0.04em;
     }
-
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
       max-width: 760px;
@@ -252,7 +226,6 @@
       transition: color 0.2s;
     }
     footer a:hover { color: var(--text); }
-
     @media (max-width: 540px) {
       .detail-grid { grid-template-columns: 1fr; }
       .header-inner { flex-direction: column; }
@@ -277,7 +250,7 @@
 
   <section class="bio">
     <p class="section-label">Biografía</p>
-    <div class="bio-accent"></div>
+    <div class="accent-bar"></div>
     <p>
       Soy Contadora Pública de profesión y cuento con una especialización en General Management
       emitida por el Global Chartered Controller Institute de Madrid. Soy egresada de la
@@ -301,18 +274,13 @@
     <p class="section-label">Proyectos</p>
     <div class="accent-bar"></div>
 
-    <a class="project" href="https://github.com/andreaarandaram/andreaarandaram.io/blob/main/1-_Montevideo_se_mueve_Entrega_Final.ipynb" target="_blank">
+    <a class="project" href="https://github.com/andreaarandaram/andreaarandaram.io/blob/main/1-%20Montevideo_se_mueve_Entrega_Final.ipynb" target="_blank">
       <div class="project-header">
         <h2>Análisis de Siniestros de Tránsito en Montevideo</h2>
         <span class="project-meta">EDA · Datos Abiertos</span>
       </div>
       <p class="project-collab">Diego Aguiar · Andrea Aranda · Gerardo González · Mariana Sambucetti</p>
-      <p>
-        Análisis exploratorio de datos sobre personas lesionadas en siniestros de tránsito
-        ocurridos en Montevideo durante 2022, utilizando datos oficiales de UNASEV.
-        Identifica patrones temporales, espaciales y sociodemográficos con potencial
-        aplicación en políticas públicas de seguridad vial.
-      </p>
+      <p>Análisis exploratorio de datos sobre personas lesionadas en siniestros de tránsito ocurridos en Montevideo durante 2022, utilizando datos oficiales de UNASEV. Identifica patrones temporales, espaciales y sociodemográficos con potencial aplicación en políticas públicas de seguridad vial.</p>
       <hr>
       <div class="detail-grid">
         <div>
@@ -333,18 +301,13 @@
       <p class="open-hint">Ver notebook en GitHub →</p>
     </a>
 
-    <a class="project" href="https://github.com/andreaarandaram/andreaarandaram.io/blob/main/2-Proyecto_Modelo_de_Clasificacion_ARANDA-SAMBUCETTI_Entrega_II.ipynb" target="_blank">
+    <a class="project" href="https://github.com/andreaarandaram/andreaarandaram.io/blob/main/2-Proyecto_Modelo%20de%20Clasificacion_ARANDA-SAMBUCETTI_Entrega_II.ipynb" target="_blank">
       <div class="project-header">
         <h2>Clasificación de Publicaciones en Mercado Libre</h2>
         <span class="project-meta">Machine Learning · Clasificación</span>
       </div>
       <p class="project-collab">Andrea Aranda · Mariana Sambucetti</p>
-      <p>
-        Modelo de clasificación supervisada para predecir si una publicación de
-        Mercado Libre Argentina corresponde a un producto nuevo o usado,
-        sobre un dataset de 100.000 publicaciones y 48 variables.
-        Se compararon tres modelos y se optimizó el mejor mediante validación cruzada.
-      </p>
+      <p>Modelo de clasificación supervisada para predecir si una publicación de Mercado Libre Argentina corresponde a un producto nuevo o usado, sobre un dataset de 100.000 publicaciones y 48 variables. Se compararon tres modelos y se optimizó el mejor mediante validación cruzada.</p>
       <hr>
       <div class="detail-grid">
         <div>
@@ -365,18 +328,13 @@
       <p class="open-hint">Ver notebook en GitHub →</p>
     </a>
 
-    <a class="project" href="https://github.com/andreaarandaram/andreaarandaram.io/blob/main/MIT_CO2_Emissions_IDB.ipynb" target="_blank">
+    <a class="project" href="https://github.com/andreaarandaram/andreaarandaram.io/blob/main/MIT_CO2%20Emissions%20IDB.ipynb" target="_blank">
       <div class="project-header">
         <h2>Predicción de Emisiones CO₂ Agro-Industriales en LATAM</h2>
         <span class="project-meta">ML Predictivo · Series de Tiempo</span>
       </div>
       <p class="project-collab">Andrea Aranda · Yuri Biardo · Hugo Martínez · MISTI GTL AI Uruguay 2026</p>
-      <p>
-        Análisis y proyección de las emisiones de CO₂ del sector agro-alimentario
-        en países de América Latina miembros del BID, usando datos históricos
-        1990–2020 para construir escenarios hacia 2030.
-        Los resultados se interpretan como escenarios condicionales bajo supuesto de continuidad histórica.
-      </p>
+      <p>Análisis y proyección de las emisiones de CO₂ del sector agro-alimentario en países de América Latina miembros del BID, usando datos históricos 1990–2020 para construir escenarios hacia 2030. Los resultados se interpretan como escenarios condicionales bajo supuesto de continuidad histórica.</p>
       <hr>
       <div class="detail-grid">
         <div>
@@ -403,11 +361,7 @@
         <span class="project-meta">NLP · Deep Learning</span>
       </div>
       <p class="project-collab">Yuri Biardo · Andrea Aranda · Mariana Sambucetti · Deep Learning — Febrero 2026</p>
-      <p>
-        Modelo de clasificación de texto multiclase basado en DistilBERT (Hugging Face)
-        para categorizar quejas de consumidores financieros en cinco tipos de productos,
-        mediante fine-tuning de un modelo Transformer pre-entrenado.
-      </p>
+      <p>Modelo de clasificación de texto multiclase basado en DistilBERT (Hugging Face) para categorizar quejas de consumidores financieros en cinco tipos de productos, mediante fine-tuning de un modelo Transformer pre-entrenado.</p>
       <hr>
       <div class="detail-grid">
         <div>
